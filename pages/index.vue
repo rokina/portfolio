@@ -11,9 +11,22 @@
           <dt>実務経験</dt>
           <dd>仙台のWeb制作会社にて<br />フロントエンド5年目</dd>
           <dt>できること</dt>
-          <dd>a</dd>
+          <dd class="c-imgList01">
+            <img src="@/assets/img/icon_nuxt.svg" alt="" />
+            <img src="@/assets/img/icon_vue.svg" alt="" />
+            <img src="@/assets/img/icon_ts.svg" alt="" />
+            <img src="@/assets/img/icon_js.svg" alt="" />
+            <img src="@/assets/img/icon_html.svg" alt="" />
+            <img src="@/assets/img/icon_css.svg" alt="" />
+            <img src="@/assets/img/icon_laravel.svg" alt="" />
+            <img src="@/assets/img/icon_wp.svg" alt="" />
+            <img src="@/assets/img/icon_php.svg" alt="" />
+          </dd>
           <dt>SNS</dt>
-          <dd>a</dd>
+          <dd class="c-imgList02">
+            <img src="@/assets/img/icon_github.svg" alt="" />
+            <img src="@/assets/img/icon_twitter.svg" alt="" />
+          </dd>
         </dl>
         <a href="#" class="c-more01">もっと<br />みる</a>
       </section>
@@ -46,7 +59,7 @@
         </section>
         <section class="c-box03">
           <h2 class="c-title01">Contact</h2>
-          <form action="">
+          <form action="" class="c-form01">
             <label for="">名前<input type="text" /></label>
             <label for="">メールアドレス<input type="text" /></label>
             <label for="">
@@ -65,6 +78,10 @@ export default {}
 </script>
 
 <style lang="scss">
+html {
+  font-size: 62.5%;
+}
+
 li,
 ol {
   list-style: none;
@@ -144,14 +161,23 @@ ol {
   }
 }
 
+.c-form01 {
+  label {
+    font-size: 1.6rem;
+  }
+}
+
 .c-title01 {
   margin-bottom: 30px;
+  font-size: 2.4rem;
+  font-weight: normal;
 }
 
 .c-dl {
   &01 {
     display: flex;
     flex-wrap: wrap;
+    font-size: 2rem;
     dt {
       width: 120px;
       &:not(:first-of-type) {
@@ -167,6 +193,7 @@ ol {
   }
   &02 {
     margin-top: 15px;
+    font-size: 1.6rem;
   }
 }
 
@@ -182,6 +209,33 @@ ol {
     a {
       text-decoration: none;
       color: #333;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.c-imgList {
+  &01 {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+      width: calc(100% / 3 - 40px);
+      &:not(:nth-child(3n + 1)) {
+        margin-left: 30px;
+      }
+      &:nth-child(n + 4) {
+        margin-top: 30px;
+      }
+    }
+  }
+  &02 {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+      &:not(:nth-child(2n + 1)) {
+        margin-left: 20px;
+      }
     }
   }
 }
@@ -201,5 +255,6 @@ ol {
   position: absolute;
   right: 200px;
   bottom: 200px;
+  font-size: 1.6rem;
 }
 </style>
