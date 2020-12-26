@@ -1,4 +1,6 @@
-/* 
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/*
 ---------------------------------*/
 .c-container {
 	margin: 0 auto;
@@ -9,7 +11,7 @@
 	justify-content: center;
 }
 
-/* 
+/*
 ---------------------------------*/
 .l-block {
 	// l-block01
@@ -24,7 +26,7 @@
 	}
 }
 
-/* 
+/*
 ---------------------------------*/
 .c-box {
 	// c-box01
@@ -86,13 +88,20 @@
 .c-form {
 	// .c-form01
 	&01 {
-		label {
-			font-size: 1.6rem;
-		}
+    &__item {
+      label {
+        font-size: 1.4rem;
+        display: block;
+      }
+      input,
+      textarea {
+        border: 1px solid #ddd;
+      }
+    }
 	}
 }
 
-/* 
+/*
 ---------------------------------*/
 .c-title {
 	// c-title01
@@ -103,7 +112,7 @@
 	}
 }
 
-/* 
+/*
 ---------------------------------*/
 .c-dl {
 	// c-dl01
@@ -131,7 +140,7 @@
 	}
 }
 
-/* 
+/*
 ---------------------------------*/
 .c-list {
 	// 1c-list01
@@ -155,7 +164,7 @@
 	}
 }
 
-/* 
+/*
 ---------------------------------*/
 .c-imgList {
 	// c-imgList01
@@ -184,7 +193,7 @@
 	}
 }
 
-/* 
+/*
 ---------------------------------*/
 .c-more {
 	// c-more01
@@ -205,4 +214,95 @@
 		align-items: center;
 		justify-content: center;
 	}
+}
+
+/*
+---------------------------------*/
+.l-anime {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: #fcfcfc;
+  font-family: 'Anonymous Pro', monospace;
+  animation:  fadeout 1s 10s forwards,
+              aaa 1s 10s forwards;
+}
+
+/*
+---------------------------------*/
+.line-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(51, 51, 51, 0.749);
+  font-size: 6rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+/*
+---------------------------------*/
+.line-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10em;
+  margin: 0 auto;
+  border-right: 2px solid transparent;
+  font-size: 6rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+/*
+---------------------------------*/
+/* Animation */
+.anim-typewriter1 {
+  animation:  typewriter1 1.5s steps(11) 1s 1 normal both,
+              blinkTextCursor 500ms steps(11) infinite normal,
+              fadeout 0.3s 4s forwards;
+}
+
+.anim-typewriter2 {
+  animation:  typewriter2 2s steps(18) 6s 1 normal both,
+              blinkTextCursor 500ms steps(18) 4.5s infinite normal,
+              fadeout 0.3s 9s forwards;
+}
+
+/*
+---------------------------------*/
+@keyframes fadeout {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes aaa {
+  0% { z-index: 1; }
+  100% { z-index: 0; }
+}
+
+@keyframes typewriter1 {
+  from { width: 0; }
+  to { width: 6em; }
+}
+
+@keyframes typewriter2 {
+  from { width: 0; }
+  to { width: 10em; }
+}
+
+@keyframes blinkTextCursor {
+  from { border-right-color: rgba(51, 51, 51, 0.749); }
+  to { border-right-color: transparent; }
 }

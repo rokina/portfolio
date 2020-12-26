@@ -1,5 +1,9 @@
 <template>
   <div class="c-container">
+    <div class="l-anime">
+      <p class="line-1 anim-typewriter1">Hiroki Sato</p>
+      <p class="line-2 anim-typewriter2">Front-End Engineer</p>
+    </div>
     <div class="l-block01">
       <section class="c-box01">
         <h2 class="c-title01">Profile</h2>
@@ -7,7 +11,7 @@
           <dt>名前</dt>
           <dd>Sato Hiroki</dd>
           <dt>生年月日</dt>
-          <dd>1993/10/7/（27歳）</dd>
+          <dd>1993/10/07（27歳）</dd>
           <dt>実務経験</dt>
           <dd>仙台のWeb制作会社にて<br />フロントエンド5年目</dd>
           <dt>できること</dt>
@@ -60,12 +64,25 @@
         <section class="c-box03">
           <h2 class="c-title01">Contact</h2>
           <form action="" class="c-form01">
-            <label for="">名前<input type="text" /></label>
-            <label for="">メールアドレス<input type="text" /></label>
-            <label for="">
-              メッセージ
-              <textarea name="" cols="30" rows="10">メッセージ</textarea>
-            </label>
+            <div class="c-form01__item">
+              <label for="">名前</label>
+              <input type="text" />
+            </div>
+            <div class="c-form01__item">
+              <label for="">メールアドレス</label>
+              <input type="text" />
+            </div>
+            <div class="c-form01__item">
+              <label for="">メッセージ</label>
+              <textarea
+                name=""
+                cols="30"
+                rows="10"
+                placeholder="メッセージを入力してください"
+              >
+テスト</textarea
+              >
+            </div>
           </form>
         </section>
       </div>
