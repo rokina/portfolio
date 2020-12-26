@@ -20,14 +20,19 @@ module.exports = {
     semi: [2, 'never'],
     'no-console': 'off',
     'vue/max-attributes-per-line': 'off',
-    'vue/html-self-closing': [
-      'error',
-      {
-        html: {
-          void: 'always',
-        },
-      },
-    ],
+    // 'vue/html-self-closing': [
+    //   'error',
+    //   {
+    //     html: {
+    //       void: 'always',
+    //       normal: 'always',
+    //       component: 'always',
+    //     },
+    //     svg: 'always',
+    //     math: 'always',
+    //   },
+    // ],
+    'vue/html-self-closing': 'off',
     'prettier/prettier': ['error', { semi: false }],
   },
 }

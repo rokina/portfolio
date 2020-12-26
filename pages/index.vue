@@ -60,12 +60,25 @@
         <section class="c-box03">
           <h2 class="c-title01">Contact</h2>
           <form action="" class="c-form01">
-            <label for="">名前<input type="text" /></label>
-            <label for="">メールアドレス<input type="text" /></label>
-            <label for="">
-              メッセージ
-              <textarea name="" cols="30" rows="10">メッセージ</textarea>
-            </label>
+            <div class="c-form01__item">
+              <label for="">名前</label>
+              <input type="text" />
+            </div>
+            <div class="c-form01__item">
+              <label for="">メールアドレス</label>
+              <input type="text" />
+            </div>
+            <div class="c-form01__item">
+              <label for="">メッセージ</label>
+              <textarea
+                name=""
+                cols="30"
+                rows="10"
+                placeholder="メッセージを入力してください"
+              >
+テスト</textarea
+              >
+            </div>
           </form>
         </section>
       </div>
