@@ -1,5 +1,9 @@
 <template>
   <div class="c-container">
+    <div class="l-anime">
+      <p class="line-1 anim-typewriter1">Hiroki Sato</p>
+      <p class="line-2 anim-typewriter2">Front-End Engineer</p>
+    </div>
     <div class="l-block01">
       <section class="c-box01">
         <h2 class="c-title01">Profile</h2>
@@ -7,7 +11,7 @@
           <dt>名前</dt>
           <dd>Sato Hiroki</dd>
           <dt>生年月日</dt>
-          <dd>1993/10/7/（27歳）</dd>
+          <dd>1993/10/07（27歳）</dd>
           <dt>実務経験</dt>
           <dd>仙台のWeb制作会社にて<br />フロントエンド5年目</dd>
           <dt>できること</dt>
