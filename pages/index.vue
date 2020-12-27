@@ -1,8 +1,15 @@
 <template>
   <div class="c-container">
-    <div class="l-anime">
+    <div class="l-anime1">
       <p class="line-1 anim-typewriter1">Hiroki Sato</p>
       <p class="line-2 anim-typewriter2">Front-End Engineer</p>
+    </div>
+    <div class="l-anime2">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
     <div class="l-block01">
       <section class="c-box01">
@@ -40,7 +47,7 @@
           <ul class="c-list01">
             <li class="c-list01__item">
               <a href="#">
-                <img src="http://placehold.jp/200x126.png" alt="" />
+                <img src="@/assets/img/site_image1.png" alt="" />
                 <p>ポートフォリオサイト</p>
               </a>
               <dl class="c-dl02">
@@ -50,7 +57,7 @@
             </li>
             <li class="c-list01__item">
               <a href="#">
-                <img src="http://placehold.jp/200x126.png" alt="" />
+                <img src="@/assets/img/site_image2.png" alt="" />
                 <p>テストテスト</p>
               </a>
               <dl class="c-dl02">
@@ -64,20 +71,22 @@
         <section class="c-box03">
           <h2 class="c-title01">Contact</h2>
           <form action="" class="c-form01">
-            <div class="c-form01__item">
-              <label for="">名前</label>
-              <input type="text" />
-            </div>
-            <div class="c-form01__item">
-              <label for="">メールアドレス</label>
-              <input type="text" />
+            <div class="c-form01__block">
+              <div class="c-form01__item">
+                <label for="">名前</label>
+                <input type="text" id="fName" />
+              </div>
+              <div class="c-form01__item">
+                <label for="">メールアドレス</label>
+                <input type="text" id="fMail" />
+              </div>
             </div>
             <div class="c-form01__item">
               <label for="">メッセージ</label>
               <textarea
                 name=""
-                cols="30"
-                rows="10"
+                id="fTextarea"
+                rows="5"
                 placeholder="メッセージを入力してください"
               >
 テスト</textarea
